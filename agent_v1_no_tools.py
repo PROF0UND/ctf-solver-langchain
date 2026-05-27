@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from langchain_ollama import ChatOllama
-from langchain_anthropic import ChatAnthropic
+# from langchain_anthropic import ChatAnthropic
 from langgraph.checkpoint.memory import InMemorySaver
 from langchain.agents import create_agent
 
@@ -25,7 +25,7 @@ async def main():
     # )
 
     llm = ChatOllama(
-        model="devstral-2:123b-cloud",
+        model="llama3.2",
         temperature=0.8,
     )
 
